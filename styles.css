@@ -1,0 +1,54 @@
+root {
+    --primary-color: #f8f8f8 ;
+    --secondary-color: #333 ;
+    --tertiary-color: #6A2C2C;
+    --quaternary-color: #4A4A4A;
+    --quinary-color: rgb(119, 114, 114);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--primary-color);
+    color: var(var(--secondary-color));
+    font-size: 1rem;
+
+}
+
+.focus .recipe {
+    border-color: red;
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.recipe img {
+    width: 200px;
+    height: auto;
+}
+
+main h1 {
+    text-align: center;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    color: var(--tertiary-color);
+}
+
+footer h6 {
+    font-size: 1rem;
+}
+
+footer li {
+    list-style: none;
+}
