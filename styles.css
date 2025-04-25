@@ -18,15 +18,21 @@ body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
 
 }
 /* Trouble shoot placing recipe items at the center of the page */
 .focus .recipe {
-    border-color: red;
     display: inline-block;
     list-style: none;
+    text-decoration: none;
     margin-left: 20px;
     align-items: center;
+}
+
+.recipe li a {
+    text-decoration: none;
 }
 
 .recipe img {
@@ -53,4 +59,8 @@ footer h6 {
 
 footer li {
     list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
 }
