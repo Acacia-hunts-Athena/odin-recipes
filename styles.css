@@ -22,17 +22,29 @@ body {
     padding: 0;
 
 }
+
+section {
+    padding: 40px 20px;
+}
 /* Trouble shoot placing recipe items at the center of the page */
+/* Switch from using inline-block to flexbox after covering it in next lesson */
 .focus .recipe {
     display: inline-block;
     list-style: none;
     text-decoration: none;
     margin-left: 20px;
+    margin-right: auto;
     align-items: center;
 }
 
 .recipe li a {
     text-decoration: none;
+    color: var(--quaternary-color);
+    transition: color 0.5s ease-in;
+}
+
+.recipe li a:hover {
+    color:var(--tertiary-color);
 }
 
 .recipe img {
@@ -47,14 +59,18 @@ main h1 {
 
 
 footer {
+    display: flexbox;
     text-align: center;
     padding: 20px;
     background-color: #fff;
     color: var(--tertiary-color);
+    margin-bottom: 0;
+    border-color: red;
 }
 
 footer h6 {
     font-size: 1rem;
+    
 }
 
 footer li {
