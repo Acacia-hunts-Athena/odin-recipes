@@ -24,8 +24,6 @@ body {
 
 }
 
-/* Trouble shoot placing recipe items at the center of the page */
-/* Switch from using inline-block to flexbox after covering it in next lesson */
 .focus {
     margin-top: 1em;
     width: 80%;
@@ -59,13 +57,16 @@ main h1 {
 /* trouble shoot colors not appearing within web page strange bug */
 
 footer {
-    text-align: center;
     padding: 20px;
     background-color: #fff;
     color: var(--tertiary-color);
     margin-bottom: 0;
     border: 10px;
     border-color: red;
+}
+
+footer ul {
+    text-align: center;
 }
 
 footer h6 {
