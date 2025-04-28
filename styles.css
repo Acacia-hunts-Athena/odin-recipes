@@ -12,43 +12,41 @@ html {
 }
 
 body {
-    display: flexbox;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-size: 1rem;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
 
 }
 
-section {
-    padding: 40px 20px;
-}
 /* Trouble shoot placing recipe items at the center of the page */
 /* Switch from using inline-block to flexbox after covering it in next lesson */
-.focus .recipe {
-    display: inline-block;
-    list-style: none;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-right: auto;
-    align-items: center;
+.focus {
+    width: 80%;
+    display: flex;
+    /* border:  10px solid black; */
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.recipe li a {
+.recipe a {
     text-decoration: none;
     color: var(--quaternary-color);
     transition: color 0.5s ease-in;
 }
 
-.recipe li a:hover {
+.recipe a:hover {
     color:var(--tertiary-color);
 }
 
 .recipe img {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
@@ -56,15 +54,15 @@ main h1 {
     text-align: center;
 }
 
-
+/* trouble shoot colors not appearing within web page strange bug */
 
 footer {
-    display: flexbox;
     text-align: center;
     padding: 20px;
     background-color: #fff;
     color: var(--tertiary-color);
     margin-bottom: 0;
+    border: 10px;
     border-color: red;
 }
 
