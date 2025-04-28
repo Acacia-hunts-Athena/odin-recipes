@@ -27,12 +27,14 @@ body {
 /* Trouble shoot placing recipe items at the center of the page */
 /* Switch from using inline-block to flexbox after covering it in next lesson */
 .focus {
+    margin-top: 1em;
     width: 80%;
     display: flex;
     /* border:  10px solid black; */
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
 .recipe a {
