@@ -11,6 +11,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Make web page user friendly to mobile users!, currently elements are out of line on samsung s8+ and so on ^^ */
+
 body {
     display: flex;
     align-items: center;
