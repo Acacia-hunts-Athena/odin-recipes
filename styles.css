@@ -1,9 +1,10 @@
-root {
+:root {
     --primary-color: #f8f8f8 ;
     --secondary-color: #333 ;
     --tertiary-color: #6A2C2C;
     --quaternary-color: #4A4A4A;
     --quinary-color: rgb(119, 114, 114);
+    --bleep-bloop: red;
 
 }
 
@@ -24,6 +25,10 @@ body {
     margin: 0 auto;
     padding: 0 auto;
 
+}
+
+.link:hover {
+    color: var(--tertiary-color);
 }
 
 .focus {
@@ -63,8 +68,8 @@ footer {
     background-color: #fff;
     color: var(--tertiary-color);
     margin-bottom: 0;
-    border: 10px;
-    border-color: red;
+    /* border: 10px; */
+    /* border-color: red; */
 }
 
 footer ul {
@@ -82,4 +87,6 @@ footer li {
 
 footer li a {
     text-decoration: none;
+    
 }
+
